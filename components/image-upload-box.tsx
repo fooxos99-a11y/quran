@@ -1,5 +1,6 @@
 import { useRef, useState } from "react"
 import { createClient } from "@supabase/supabase-js"
+import { Upload } from "lucide-react"
 
 import { Dialog, DialogContent, DialogTrigger, DialogClose } from "@/components/ui/dialog"
 
@@ -68,7 +69,18 @@ export function ImageUploadBox({ value, onUpload, onRemove }: {
               )}
             </>
           ) : (
-            <span className="text-muted-foreground">أضف صورة هنا</span>
+            <div className="relative w-full h-full flex flex-col items-center justify-center">
+              <span className="text-muted-foreground">أضف صورة هنا</span>
+              <button
+                type="button"
+                onClick={e => { e.stopPropagation(); fileInputRef.current?.click(); }}
+                className="absolute top-3 right-3 bg-primary text-white rounded-full w-9 h-9 flex items-center justify-center shadow-lg hover:bg-primary/80 transition-colors"
+                title="رفع صورة"
+                style={{ zIndex: 2 }}
+              >
+                <Upload size={20} />
+              </button>
+            </div>
           )}
         </div>
         {value && (
