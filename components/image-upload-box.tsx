@@ -37,7 +37,7 @@ export function ImageUploadBox({ value, onUpload, onRemove }: {
 
   return (
     <>
-      <Dialog open={open} onOpenChange={setOpen}>
+      <>
         <div
           className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors cursor-pointer relative"
           onClick={handleBoxClick}
@@ -83,13 +83,27 @@ export function ImageUploadBox({ value, onUpload, onRemove }: {
             </div>
           )}
         </div>
-        {value && (
-          <DialogContent showCloseButton className="max-w-2xl p-0 bg-transparent border-none shadow-none flex items-center justify-center">
-            <span className="sr-only" id="dialog-image-title">عرض الصورة</span>
-            <img src={value} alt="صورة مكبرة" className="max-h-[80vh] max-w-full rounded-lg" />
-          </DialogContent>
+        {open && value && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 cursor-zoom-out"
+            onClick={() => setOpen(false)}
+          >
+            <img
+              src={value}
+              alt="صورة مكبرة"
+              className="max-w-full max-h-full rounded-lg shadow-2xl"
+              style={{ objectFit: 'contain' }}
+              onClick={e => e.stopPropagation()}
+            />
+            <button
+              className="absolute top-6 right-8 text-white bg-black/60 rounded-full w-10 h-10 flex items-center justify-center text-2xl hover:bg-black/80"
+              onClick={() => setOpen(false)}
+              title="إغلاق"
+              style={{ zIndex: 51 }}
+            >×</button>
+          </div>
         )}
-      </Dialog>
+      </>
     </>
   )
 }
