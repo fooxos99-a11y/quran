@@ -187,15 +187,7 @@ export default function Home() {
             description="متابعة دقيقة من أولياء الأمور لأبناءهم مما يعزز من وضع أولياء الأمور لأبناءهم في المجمع"
           />
           <div className="flex flex-col gap-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <FeatureCard
-                icon={<Eye className="w-8 h-8" />}
-                title="المتابعة الشاملة"
-                description="إمكانية متابعة ولي الأمر لجميع بيانات الابن (حضور، إنجاز)."
-                large
-              />
-              <ImageUploadBox value={images[6]} onUpload={url => saveImage(6, url)} onRemove={() => removeImage(6)} />
-            </div>
+            {/* تم حذف بطاقة المتابعة الشاملة بناءً على طلب المستخدم */}
 
             {/* بطاقة جديدة: الاطلاع على سجلات ابنه */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
