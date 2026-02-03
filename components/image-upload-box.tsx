@@ -70,7 +70,6 @@ export function ImageUploadBox({ value, onUpload, onRemove }: {
             </>
           ) : (
             <div className="relative w-full h-full flex flex-col items-center justify-center">
-              <span className="text-muted-foreground">أضف صورة هنا</span>
               <button
                 type="button"
                 onClick={e => { e.stopPropagation(); fileInputRef.current?.click(); }}
