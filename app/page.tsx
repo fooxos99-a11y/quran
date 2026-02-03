@@ -137,9 +137,7 @@ export default function Home() {
                 description="توحيد المسار التعليمي للطالب في منصة واحدة لمنع التشتت."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[1]} onUpload={url => saveImage(1, url)} onRemove={() => removeImage(1)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -148,9 +146,7 @@ export default function Home() {
                 description="نظام التحدي اليومي لخلق روح التنافس بين طلاب الحلقة."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[2]} onUpload={url => saveImage(2, url)} onRemove={() => removeImage(2)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -159,9 +155,7 @@ export default function Home() {
                 description="متجر خاص يتيح للطالب الاستفادة من نقاطه المكتسبة."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[3]} onUpload={url => saveImage(3, url)} onRemove={() => removeImage(3)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -170,9 +164,7 @@ export default function Home() {
                 description="لوحة تفاعلية لمتابعة التقدم والنقاط والحفظ بوضوح بعكس ناظم فلا يستطيع الطالب رؤية ترتيبه."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[4]} onUpload={url => saveImage(4, url)} onRemove={() => removeImage(4)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -181,9 +173,7 @@ export default function Home() {
                 description="أوسمة شرفية تُمنح للطلاب المتميزين عند تحقيق إنجازات محددة؛ بهدف خلق روح من الحماس والمنافسة."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[5]} onUpload={url => saveImage(5, url)} onRemove={() => removeImage(5)} />
             </div>
           </div>
         </div>
