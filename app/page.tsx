@@ -85,15 +85,7 @@ export default function Home() {
                 large
               />
             </div>
-            {/* الصف الثالث */}
-            <div className="w-full">
-              <FeatureCard
-                icon={<Trophy className="w-8 h-8" />}
-                title="صفحة الإنجازات"
-                description="واجهة مخصصة لعرض إنجازات المجمع والطلاب."
-                large
-              />
-            </div>
+            {/* الصف الثالث تم نقله إلى الطلاب */}
             {/* الصف الرابع */}
             <div className="w-full">
               <FeatureCard
@@ -132,12 +124,20 @@ export default function Home() {
           <div className="flex flex-col gap-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
+                icon={<Trophy className="w-8 h-8" />}
+                title="صفحة الإنجازات"
+                description="واجهة مخصصة لعرض إنجازات المجمع والطلاب."
+                large
+              />
+              <ImageUploadBox value={images[1]} onUpload={url => saveImage(1, url)} onRemove={() => removeImage(1)} />
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <FeatureCard
                 icon={<Route className="w-8 h-8" />}
                 title="توحيد المسار"
                 description="توحيد المسار التعليمي للطالب في منصة واحدة لمنع التشتت."
                 large
               />
-              <ImageUploadBox value={images[1]} onUpload={url => saveImage(1, url)} onRemove={() => removeImage(1)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
