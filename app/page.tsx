@@ -267,8 +267,8 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
                 icon={<ListChecks className="w-8 h-8" />}
-                title="سرعة التحضير"
-                description="سهولة وسرعة التحضير اليومي وإدارة الحلقات."
+                title="تحضير المعلمين"
+                description="سهولة التحضير اليومي للمعلم وانتقال التحضير الى صفحة الإدارة مع التاريخ والوقت بالضبط"
                 large
               />
               <ImageUploadBox value={images[14]} onUpload={url => saveImage(14, url)} onRemove={() => removeImage(14)} />
