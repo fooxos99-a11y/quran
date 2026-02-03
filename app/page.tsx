@@ -194,9 +194,7 @@ export default function Home() {
                 description="إمكانية متابعة ولي الأمر لجميع بيانات الابن (حضور، إنجاز)."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[6]} onUpload={url => saveImage(6, url)} onRemove={() => removeImage(6)} />
             </div>
 
             {/* بطاقة جديدة: الاطلاع على سجلات ابنه */}
@@ -207,9 +205,7 @@ export default function Home() {
                 description="يتيح الموقع لوليّ الأمر الاطلاع على سجلات ابنه بسهولة وسرعة وبشكل مباشر دون الحاجة إلى التواصل مع الإدارة لأخذ تقرير ابنه"
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[7]} onUpload={url => saveImage(7, url)} onRemove={() => removeImage(7)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -218,9 +214,7 @@ export default function Home() {
                 description="تسهيل التواصل المباشر والسريع بين أولياء الأمور والإدارة."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[8]} onUpload={url => saveImage(8, url)} onRemove={() => removeImage(8)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -229,9 +223,7 @@ export default function Home() {
                 description="إرسال إشعارات تلقائية فورية لولي الأمر في حال غياب الطالب."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[9]} onUpload={url => saveImage(9, url)} onRemove={() => removeImage(9)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -240,9 +232,7 @@ export default function Home() {
                 description="تقاويم محدثة تظهر مواعيد الرحلات، البرامج، والاختبارات."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[10]} onUpload={url => saveImage(10, url)} onRemove={() => removeImage(10)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -251,9 +241,7 @@ export default function Home() {
                 description="سهولة الوصول لجميع أولياء الأمور عبر رسائل جماعية مما يسهل للإدارة التواصل معهم."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[11]} onUpload={url => saveImage(11, url)} onRemove={() => removeImage(11)} />
             </div>
           </div>
         </div>
@@ -273,9 +261,7 @@ export default function Home() {
                 description="الاستغناء الكامل عن الأوراق لتسهيل العمل الإداري والأرشفة."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[12]} onUpload={url => saveImage(12, url)} onRemove={() => removeImage(12)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -284,9 +270,7 @@ export default function Home() {
                 description="نظام ذكي يرسل إشعاراً فورياً للإدارة في حال تأخر المعلم عن تسجيل حضور الطلاب لضمان الجودة."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[13]} onUpload={url => saveImage(13, url)} onRemove={() => removeImage(13)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -295,9 +279,7 @@ export default function Home() {
                 description="سهولة وسرعة التحضير اليومي وإدارة الحلقات."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[14]} onUpload={url => saveImage(14, url)} onRemove={() => removeImage(14)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -306,9 +288,7 @@ export default function Home() {
                 description="إدارة بيانات الطلاب (إضافة، عرض، إزالة) بمرونة عالية."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[15]} onUpload={url => saveImage(15, url)} onRemove={() => removeImage(15)} />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -318,9 +298,7 @@ export default function Home() {
                 description="إنشاء مسابقات تفاعلية لاستثمار وقت الطلاب أثناء الرحلات."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[16]} onUpload={url => saveImage(16, url)} onRemove={() => removeImage(16)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -329,9 +307,7 @@ export default function Home() {
                 description="إمكانية وضع برامج من الجمعية أو خاصة للمجمع بسهولة."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[17]} onUpload={url => saveImage(17, url)} onRemove={() => removeImage(17)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
@@ -340,9 +316,7 @@ export default function Home() {
                 description="ربط الموقع بأنظمة الجمعية بنقل بيانات البرامج وحضور الطلاب وتقييماتهم عن طريق اداري مخصص لضمان الحصول على أفضل نتيجة دائما في ناظم."
                 large
               />
-              <div className="bg-card border-2 border-dashed border-border rounded-2xl min-h-[220px] flex items-center justify-center overflow-hidden hover:border-primary transition-colors">
-                <span className="text-muted-foreground">أضف صورة هنا</span>
-              </div>
+              <ImageUploadBox value={images[18]} onUpload={url => saveImage(18, url)} onRemove={() => removeImage(18)} />
             </div>
           </div>
         </div>
