@@ -277,7 +277,7 @@ export default function Home() {
               <FeatureCard
                 icon={<UsersRound className="w-8 h-8" />}
                 title="إدارة البيانات"
-                description="إدارة بيانات الطلاب (إضافة، عرض، إزالة) بمرونة عالية."
+                description="ادارة كاملة للموقع للمسار والتقارير والمتجر وغيرها عن طريق لوحة تحكم الإدارة بسهولة مع عرض احصائية كاملة للمجمع"
                 large
               />
               <ImageUploadBox value={images[15]} onUpload={url => saveImage(15, url)} onRemove={() => removeImage(15)} />
