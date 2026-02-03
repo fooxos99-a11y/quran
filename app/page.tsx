@@ -158,15 +158,7 @@ export default function Home() {
               />
               <ImageUploadBox value={images[3]} onUpload={url => saveImage(3, url)} onRemove={() => removeImage(3)} />
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <FeatureCard
-                icon={<PieChart className="w-8 h-8" />}
-                title="لوحة الإنجازات"
-                description="لوحة تفاعلية لمتابعة التقدم والنقاط والحفظ بوضوح بعكس ناظم فلا يستطيع الطالب رؤية ترتيبه."
-                large
-              />
-              <ImageUploadBox value={images[4]} onUpload={url => saveImage(4, url)} onRemove={() => removeImage(4)} />
-            </div>
+// ...existing code...
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
                 icon={<Medal className="w-8 h-8" />}
