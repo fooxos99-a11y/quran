@@ -138,6 +138,7 @@ export default function Home() {
                 description="توحيد المسار التعليمي للطالب في منصة واحدة لمنع التشتت."
                 large
               />
+              <ImageUploadBox value={images[19]} onUpload={url => saveImage(19, url)} onRemove={() => removeImage(19)} />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
